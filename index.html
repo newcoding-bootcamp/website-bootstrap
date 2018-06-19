@@ -238,14 +238,15 @@
                     <label for="mce-LNAME">Last Name  <span class="asterisk">*</span></label>
                     <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
                   </div>
-                  <div class="mc-field-group input-group">
-                    <strong>What best describes you?  <span class="asterisk">*</span></strong>
-                    <ul>
-                      <li><input type="radio" value="Parent" name="PERSONTYPE" id="mce-PERSONTYPE-0"><label for="mce-PERSONTYPE-0">Parent</label></li>
-                      <li><input type="radio" value="Student" name="PERSONTYPE" id="mce-PERSONTYPE-1"><label for="mce-PERSONTYPE-1">Student</label></li>
-                      <li><input type="radio" value="Teacher" name="PERSONTYPE" id="mce-PERSONTYPE-2"><label for="mce-PERSONTYPE-2">Teacher</label></li>
-                      <li><input type="radio" value="Other" name="PERSONTYPE" id="mce-PERSONTYPE-3"><label for="mce-PERSONTYPE-3">Other</label></li>
-                    </ul>
+                  <div class="mc-field-group">
+                    <label for="mce-PERSONTYPE">What best describes you? </label>
+                    <select name="PERSONTYPE" class="required" id="mce-PERSONTYPE">
+                      <option value=""></option>
+                      <option value="Parent">Parent</option>
+                      <option value="Student">Student</option>
+                      <option value="Teacher">Teacher</option>
+                      <option value="Other">Other</option>
+                    </select>
                   </div>
                   <div id="mce-responses" class="clear">
                     <div class="response" id="mce-error-response" style="display:none">
@@ -264,6 +265,9 @@
           </div>
 
           <!--End mc_embed_signup-->
+
+
+
       </div>
 
     </div>
