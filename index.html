@@ -16,11 +16,52 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 <body>
+
+  <!-- ****** -->
+  <!-- Navbar -->
+  <!-- ****** -->
+  <div class="container">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="NewCoding-logo-website.png" height="30" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#summer-camp">Summer Camp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#office-hours">Office Hours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#full-stack-course">Full-Stack Course</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mentors">Mentors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#subscribe">Subscribe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:info@newcoding.org">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ************ -->
+  <!-- Header Image -->
+  <!-- ************ -->
   <div id="header-image">
     <div class="header-text-container">
-      <h2 id= "header-text-heading" class="display-3">Welcome to Agile Education</h2>
+      <h2 id= "header-text-heading" class="display-3 mt-4">Welcome to Agile Education</h2>
       <div style="display: flex; justify-content: center;">
-        <div class="col-lg-6 pt-2">
+        <div class="col-lg-6 pt-4">
           <p class="lead pt-3">NewCoding teaches students software development fundamentals, empowering them to use the abundance of free and low-cost learning resources available for professional developers.</p>
           <p class="lead">NewCoding is a free program of the
             <a href="http://newco.foundation/">NewCo Foundation</a>.
@@ -32,11 +73,33 @@
 
   <!-- Body Container -->
   <div class="container">
-    <div class="bg-warning">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card mt-4">
+          <div class="card-body">
+            <h2 class="card-title display-5">Hacker Summer Camp</h2>
+            <h6 class="card-subtitle mb-2 text-muted">An Introduction to Web Development</h6>
+            <div class="row">
+              <div class="col-lg-6">
+                <p class="card-text">A blended in-person and online course – once-weekly workshops are taught by professional software developers, with volunteer mentors floating around the room to assist one-on-one. Students are assigned 3-5 hours per week of at-home, self-study tutorials.</p>
+              </div>
+              <div class="col-lg-6">
+                <p class="card-text"><strong>Ages</strong>: 12-20 &nbsp; &nbsp; &nbsp; <strong>Cost</strong>: Free
+                <p class="card-text"><strong>Workshops</strong>: Wednesday 6-9p, July 11 - August 22, 2018</p>
+                <p class="card-text"><strong>Location</strong>: <a href="https://goo.gl/maps/hHoazdB9hfr" target="_blank">Computer Lab C3-104</a>, Rancho Campana High School</p>
+              </div>
+            </div>
+            <a class="btn btn-primary btn-lg mt-4" href="https://docs.google.com/forms/d/e/1FAIpQLSe3DkjbYMVWBqcmx0N6dJerXsxeDb2CSw9KG5e8Ko_TrQInoQ/viewform" target="_blank" role="button">Apply for Hacker Summer Camp</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
+      <!-- ****************** -->
       <!-- Hacker Summer Camp -->
+      <!-- ****************** -->
       <div class="jumbotron bg-warning pt-4 pb-3">
-        <h2 class="display-4 pb-3">Hacker Summer Camp</h2>
+        <h2 class="display-4 pb-3"><a name="summer-camp">Hacker Summer Camp</a></h2>
           <div class="row bg-light rounded pt-3">
             <div class="col-lg-12">
               <p class="lead"> A blended in-person and online course – once-weekly workshops are taught by professional software developers, with volunteer mentors floating around the room to assist one-on-one. Students are assigned 3-5 hours per week of at-home, self-study tutorials.
@@ -62,7 +125,9 @@
               </div>
 
 
+              <!-- *********** -->
               <!-- Image Cards -->
+              <!-- *********** -->
               <div class="row px-3">
                 <div class="col-lg-2 col-sm-4 col-xs-6 pb-3">
                   <div class="card">
@@ -178,7 +243,6 @@
 
             </div>
           </div>
-        </div>
     </div>
 
 
@@ -234,7 +298,7 @@
 
     <!-- Full-Stack Software Development Course -->
     <div class="jumbotron bg-danger pt-4 pb-3">
-      <h2 class="display-4 pb-3">Full-Stack Software Development Course</h2>
+      <h2 class="display-4 pb-3"><a name="full-stack-course">Full-Stack Software Development Course</a></h2>
         <div class="row bg-light rounded pt-3">
           <div class="col-lg-12">
             <p class="lead text-center">18-Week course, coming August 2018 to Jan 2019</p>
@@ -356,6 +420,11 @@
                     <input type="text" value="" name="LNAME" class="required form-control ml-2" id="mce-LNAME">
                   </div> -->
 
-
+  <!-- Shift window to accomodate for navbar during in-page link hopping -->
+  <script>
+    var shiftWindow = function() { scrollBy(0, -80) };
+    window.addEventListener("hashchange", shiftWindow);
+    function load() { if (window.location.hash) shiftWindow(); }
+  </script>
 </body>
 </html>
