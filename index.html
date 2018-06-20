@@ -19,7 +19,9 @@
   <!-- Navbar -->
   <div class="container">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">
+        <img src="NewCoding-logo-website.png" height="30" alt="">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -393,6 +395,11 @@
                     <input type="text" value="" name="LNAME" class="required form-control ml-2" id="mce-LNAME">
                   </div> -->
 
-
+  <!-- Shift window to accomodate for navbar during in-page link hopping -->
+  <script>
+    var shiftWindow = function() { scrollBy(0, -80) };
+    window.addEventListener("hashchange", shiftWindow);
+    function load() { if (window.location.hash) shiftWindow(); }
+  </script>
 </body>
 </html>
