@@ -8,8 +8,8 @@ flex-direction: column;
 justify-content: center;
 }
 
-#header-text-heading {
-  text-shadow: #FFF 5px 0 20px;
+.text-shadow-white {
+  text-shadow: #FFF 0 0 20px;
 }
 
 .header-text-container {
