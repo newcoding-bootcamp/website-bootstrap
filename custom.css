@@ -15,3 +15,7 @@ justify-content: center;
 .header-text-container {
   text-align: center;
 }
+
+.bg-purple {
+  background-color: #563d7c;
+}
