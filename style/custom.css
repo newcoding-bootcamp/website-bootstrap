@@ -16,10 +16,6 @@ justify-content: center;
   text-align: center;
 }
 
-.bg-purple {
-  background-color: #563d7c;
-}
-
 .map-responsive{
   overflow:hidden;
   padding-bottom:56.25%;
