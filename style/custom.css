@@ -1,6 +1,6 @@
 #header-image {
 background-size: cover;
-background-image: url("/img/js-code-1920x1280-op20.jpg");
+background-image: url("../img/js-code-1920x1280-op20.jpg");
 height: 100vh;
 width: 100vw;
 display: flex;
