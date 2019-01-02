@@ -1,0 +1,2 @@
+script:
+  - echo script is running in .travis.yml
