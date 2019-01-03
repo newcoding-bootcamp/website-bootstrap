@@ -1,0 +1,19 @@
+{
+  "name": "website-bootstrap",
+  "version": "1.0.0",
+  "description": "Built with Bootstrap 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Warning: no tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newcoding-bootcamp/website-bootstrap.git"
+  },
+  "author": "NewCo Foundation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/newcoding-bootcamp/website-bootstrap/issues"
+  },
+  "homepage": "https://github.com/newcoding-bootcamp/website-bootstrap#readme"
+}

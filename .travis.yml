@@ -1,28 +1,15 @@
-# language: python
-
-# python:
-#   - "3.5"
-
-# cache: pip
-
-# install:
-#   - pip install awscli
-
-# script:
-#   - echo script is running in .travis.yml
-
+language: node_js
+node_js:
+  - node
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   region: us-west-2
-
   bucket: newco.foundation
   local_dir: ./
   on:
     branch: master
-
   # Prevent Travis from deleting built site (so it can be uploaded)
   skip_cleanup: true
-
-  cache_control: "max-age=21600"
+  # cache_control: "max-age=21600"
