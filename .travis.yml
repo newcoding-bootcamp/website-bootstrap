@@ -8,24 +8,21 @@
 # install:
 #   - pip install awscli
 
-script:
-  - echo script is running in .travis.yml
+# script:
+#   - echo script is running in .travis.yml
 
 deploy:
-  on:
-    branch: master
   provider: s3
-
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
+  region: us-west-2
 
   bucket: newco.foundation
-
-  region: us-west-2
+  local_dir: ./
+  on:
+    branch: master
 
   # Prevent Travis from deleting built site (so it can be uploaded)
   skip_cleanup: true
-
-  local_dir: build
 
   cache_control: "max-age=21600"
