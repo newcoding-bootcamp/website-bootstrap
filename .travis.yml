@@ -10,7 +10,6 @@ install:
 
 script:
   - echo script is running in .travis.yml
-  - make build
 
 deploy:
   on:
