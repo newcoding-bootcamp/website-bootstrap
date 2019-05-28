@@ -24,6 +24,32 @@
 
 <body>
 
+  <!-- Modal -->
+  <div class="modal fade" id="VCOEmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">NewCoding Bootcamp is now part of Career Education Center's IT Curriculum</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row d-flex align-items-center">
+            <div class="col-4">
+              <img src="img/cec-logo.jpg" alt="CEC logo" class="img-fluid">
+            </div>
+            <div class="col-8">
+              <p>
+                Thanks to our students and volunteer mentors, a year-long <i>Full-Stack Software Development</i> course is now offered by the Ventura County Office of Education through the <a href="https://www.vcoe.org/cec">Career Education Center</a> for the 2018-2019 school year!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ****** -->
   <!-- Navbar -->
   <!-- ****** -->
@@ -693,11 +719,17 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
-  <!-- Shift window to accomodate for navbar during in-page link hopping -->
   <script>
+    // Shift window to accomodate for navbar during in-page link hopping
     var shiftWindow = function () { scrollBy(0, -80) };
     window.addEventListener("hashchange", shiftWindow);
     function load() { if (window.location.hash) shiftWindow(); }
+    
+    // modal
+    $(window).on('load', function(){
+      $('#VCOEmodal').modal('show');
+    });
+
   </script>
 
 </body>
